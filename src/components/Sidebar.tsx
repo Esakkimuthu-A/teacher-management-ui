@@ -61,7 +61,7 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
                 href={item.href}
                 className={clsx(
                   'flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-[#2a2a3d]',
-                  pathname === item.href && 'bg-[#2a2a3d]' // ✅ highlight selected item
+                  pathname === item.href && 'bg-[#2a2a3d]'
                 )}
                 onClick={() => setIsOpen(false)}
               >
