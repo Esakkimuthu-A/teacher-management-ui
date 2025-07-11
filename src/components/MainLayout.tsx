@@ -11,19 +11,15 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     <div className="flex">
       {/* Sidebar */}
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-
       {/* Main content area */}
       <div className="lg:ml-64 flex flex-col min-h-screen w-full bg-white">
         {/* Header */}
         <Header onToggleSidebar={() => setIsOpen(!isOpen)} />
-
         {/* Page Content */}
         <main className="flex-1 p-4 overflow-auto">
           {children}
         </main>
       </div>
     </div>
-
-
   );
 }

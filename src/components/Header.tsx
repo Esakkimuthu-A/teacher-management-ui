@@ -24,7 +24,7 @@ export default function Header({ onToggleSidebar }: HeaderProps) {
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 bg-white border-b border-gray-200 h-16 flex items-center justify-between px-4 sm:px-6 shadow-sm">
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-200 h-16 flex items-center justify-between px-4 sm:px-6 shadow-sm">
 
       {/* Mobile Hamburger Icon */}
       <button className="lg:hidden mr-2" onClick={onToggleSidebar}>
