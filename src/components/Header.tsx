@@ -2,6 +2,7 @@
 
 import { Menu } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
 
 type HeaderProps = {
   onToggleSidebar: () => void;
@@ -41,9 +42,11 @@ export default function Header({ onToggleSidebar }: HeaderProps) {
           className="flex items-center gap-3 cursor-pointer mr-2"
           onClick={() => setOpen((prev) => !prev)}
         >
-          <img
+          <Image
             src="https://i.pravatar.cc/40"
             alt="Profile"
+            width={40}
+            height={40}
             className="w-10 h-10 rounded-full"
           />
         </div>

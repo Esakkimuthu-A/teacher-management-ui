@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div>
       <p className="text-gray-600 text-lg mb-4">
-        Welcome back! Here's a quick overview of your teacher management system.
+        Welcome back! Here&apos;s a quick overview of your teacher management system.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div className="bg-white p-4 rounded-lg shadow">
